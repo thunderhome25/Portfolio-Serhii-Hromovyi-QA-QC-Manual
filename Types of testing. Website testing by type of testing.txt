@@ -3,17 +3,16 @@ Usability: Checking the position of the login button
 Functional: Checking the addition of goods to the cart
 Security: Checking the authorization form on the site 
 Performance:
-Stress: Checking the maximum number of requests on the site
-Recovery: Checking the site recovery after a DDoS attack 
-Load: Website behavior with 1000 people on the site at the same time
-Volume: The speed of the site when adding 100 products 
-Endurance: Checking the stability of the site with 500 active users at the same time for a period of 2 hours
-Scalability: Checking the stability of the site with 500 active users at the same time 
-Configuration: Checking the site on Google Chrome Environment 
+	Stress: Checking the maximum number of requests on the site
+	Recovery: Checking the site recovery after a DDoS attack 
+	Load: Website behavior with 1000 people on the site at the same time
+	Volume: The speed of the site when adding 100 products 
+	Endurance: Checking the stability of the site with 500 active users at the same time for a period of 2 hours
+	Scalability: Checking the stability of the site with 500 active users at the same time 
+	Configuration: Checking the site on Google Chrome Environment 
 Portability: Checking the site on MacOS/Safari Environment
 Localization: Testing the main page of the site when changing the site language to ENG
 Internationalization: Checking the format of the time of adding products to the page when the site language is changed to ENG
-Globalization.
 Re-testing: Checking the display of the logo on the main page
 Smoke: Checking the addition of an item to the cart 
 Regression: Checking the “Feedback” form on the main page of the site
