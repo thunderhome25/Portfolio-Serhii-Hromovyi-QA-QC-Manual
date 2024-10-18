@@ -1,0 +1,14 @@
+Objectives: 
+Given an Input field that accepts integer values from 18 to 99 inclusive. You need to test it using the Boundary Values Analysis and Equivalence Partitioning techniques.
+
+Solution:
+Equivalence Partitioning
+1. Check the input field, enter the number 18
+2. Try to enter the number 100 in the input field
+3. Try to enter the number 17.01 in the input field
+
+Boundary values
+1. Check the input field, enter the number 18
+2. Check the input field, enter the number 99
+3. Try to enter the number 17 in the input field
+4. Try to enter the number 100 in the input field

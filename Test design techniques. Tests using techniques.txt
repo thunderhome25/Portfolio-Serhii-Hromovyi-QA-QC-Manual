@@ -1,0 +1,32 @@
+Equivalence Partitioning
+Valid:
+1. Enter a valid email/test data in the registration field: qatesting@gmail.com.
+2. Enter your phone number in the registration field / Test data: + 380 63 421 2506
+Invalid:
+1. Enter an invalid email / Test data in the registration field: 123gmailcom
+2. Enter a phone number in the registration field / Test data: + 380 00 000 00000
+
+Boundary values (requirements: user age from 18 to 110, password length no more than 10 characters)
+Valid:
+1. Enter a valid user age / Test data in the registration field: 18
+2. Enter a valid 10-character password in the registration field / Test data: 1234567890
+Invalid:
+1. Try to enter an invalid user age in the registration field / Test data: 17
+2. Try to enter an invalid password of 11 characters in the registration field / Test data: 12345678901
+
+Pairwise testing.
+Valid:
+1. Apply the filter “Color”, “Size”, and “Category” on the page “Men's Clothing” / Test data: Color: Blue, Category: T-shirt, Size - M
+2. Apply the “Color”, “Size”, and “Category” filters on the “Men's Clothing” / Test data page: Color: Black, Category: Jacket, Size - XL
+Invalid:
+1. Trying to apply an invalid Color, Size, Category filter on the Men's Clothing / Test Data page: Color: Blue, Category: Dress, Size - M
+2. Trying to apply an invalid filter “Color”, “Size”, “Category” on the page “Men's Clothing” / Test data: Color: Black, Category: Jacket, Size - 6
+
+Guessing the mistakes
+Valid:
+1. On the “Registration” page, enter valid data in the “Birthday” field / Test data: 01.02.1990
+2. On the “Registration” page, fill in all fields with valid data / Test data: Username: user123, Password: 1234567890, First name: Serhii, Last name: Test, Data birth: 01.02.1990
+Invalid:
+1. On the Registration page, enter invalid data in the Birthday / Test data field: 19.09.2024
+2. On the “Registration” page, do NOT fill in the main fields and try to register
+
