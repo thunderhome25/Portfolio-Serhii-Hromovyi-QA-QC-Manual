@@ -1,0 +1,14 @@
+a) select all fields from universities,
+Select * from db1.Universities
+
+b) select only the first and last names of students,
+Select Name, Surname FROM db1.Students
+
+c) select only those students whose name is Ivan,
+Select * FROM db1.Students WHERE NAME="Ivan”
+
+d) select only those groups whose numbers are greater than 300,
+Select * FROM db1.Groups WHERE GroupNumber > 300
+
+e) select only those universities that contain the letter “U” in the name. Provide the result as a screenshot
+Select * FROM db1.Universities WHERE uniName LIKE “%У%”

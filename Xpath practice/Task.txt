@@ -1,0 +1,6 @@
+Task.
+Go to https://friends.in.ua/serialdruzi/ and find the following XPath elements:
+a) The title “CЕРІАЛ ДРУЗІ ВСІ СЕЗОНИ УКРАЇНСЬКОЮ МОВОЮ ОНЛАЙН”
+b) The parent of the result of task “a” by the word parent
+c) Parent of the result of task “b” by attribute
+d) The element by 2 attributes

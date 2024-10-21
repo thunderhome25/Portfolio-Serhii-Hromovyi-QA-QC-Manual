@@ -1,0 +1,22 @@
+a) Get the phone number and address of the Muzik user.
+SELECT phone, address From USER WHERE from_user = 'Muzik'
+
+b) Get all users whose name ends with A
+SELECT * FROM User WHERE name LIKE “%A”
+
+c) Retrieve data about users who have an order amount over 2000 UAH.
+SELECT * from user join order on user.id = order.user_id where order.sum > 2000
+
+d) Count the number of orders in the table
+SELECT COUNT(*) FROM Order
+
+e) Calculate the total amount of orders placed.
+SELECT SUM(sum) From Order
+
+updt/
+
+a) There is an imaginary table Workers (id. name, hireDate, profession). Get all Testers from the Workers table, sort by hire date
+SELECT * from Workers WHERE name = “QA” ORDER BY hireDate ASC
+
+b) Get the 5 most recently hired Testers from the Workers table
+SELECT * From Workers WHERE name = “QA” ORDER BY hireDate DESC LIMIT 5

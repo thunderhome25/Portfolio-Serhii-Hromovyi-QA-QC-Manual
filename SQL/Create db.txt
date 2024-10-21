@@ -1,0 +1,61 @@
+Requirements: In databases, create tables, and relationships between them, and fill them with data. Requirements:
+a) Table Universities with columns Id, UniName, and City. One or more universities must contain the letter U in the name (LNU, CNU)
+b) The table Faculties with columns Id, Name, UniversityId (linked by a foreign key to the table Universities).
+c) Groups table with clones Id, GroupNumber, and FacultyId (linked by a foreign key to the Faculties table). When filling in, note that group numbers depend on the course. The first digit of the group always indicates the course (1 course = 102, 103, etc. group). Create one or two groups for each (1-5) course.
+d) The Students table has columns Id, Name, Surname, Age, and GroupId (linked by a foreign key to the Groups table). When filling out, create one student named Ivan.
+
+SQL code:
+CREATE DATABASE DB1;
+
+CREATE TABLE db1.Universities (
+`id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`uniName` VARCHAR (45) NOT NULL,
+`city`  VARCHAR (45) NULL
+);
+
+CREATE TABLE db1.Faculties  (
+`id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`Name` VARCHAR (45) NOT NULL,
+`UniversityId` INT,
+    FOREIGN KEY (UniversityId) REFERENCES Universities(Id) 
+    );
+    
+CREATE TABLE db1.Groups  (
+`id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`GroupNumber` INT,
+`FacultyId` INT,
+    FOREIGN KEY (FacultyId) REFERENCES Faculties(Id) 
+    );
+ 
+CREATE TABLE db1.Students (
+    `Id` INT PRIMARY KEY AUTO_INCREMENT,
+    `Name` VARCHAR(45),
+    `Surname` VARCHAR(45),
+   `Age` INT,
+    `GroupId` INT,
+    FOREIGN KEY (GroupId) REFERENCES `Groups`(Id)
+);
+
+INSERT INTO db1.Universities (uniName, city) VALUES
+("ЛНУ", "Львів"),
+("ЧНУ", "Чернівці"),
+("КНУ", "Киів");
+
+INSERT INTO db1.Faculties (Name, UniversityId) VALUES 
+('Факультет прикладної математики', 1),
+('Факультет фізики', 1),
+('Факультет історії', 2),
+('Факультет права', 3);
+
+INSERT INTO db1.Groups (GroupNumber, FacultyId) VALUES 
+(102, 1), (103, 1), (202, 1), (203, 1), (302, 1), (402, 1), (502, 1),
+(102, 2), (203, 2), (302, 2), (403, 2), (503, 2),
+(102, 3), (202, 3), (303, 3), (403, 3), (503, 3),
+(102, 4), (202, 4), (302, 4), (402, 4), (502, 4);
+
+INSERT INTO db1.Students (Name, Surname, Age, GroupId) VALUES 
+('Іван', 'Петренко', 18, 1), 
+('Марія', 'Іванова', 19, 4), 
+('Олексій', 'Коваленко', 20, 15),
+('Анастасія', 'Сидоренко', 21, 16),
+('Дмитро', 'Мельник', 22, 22);

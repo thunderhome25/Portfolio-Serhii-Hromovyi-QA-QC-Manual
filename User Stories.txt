@@ -1,0 +1,13 @@
+1. As a Guest, I want to log in to save delivery data, view order history
+2. As a Guest, I want to use the search to find the products I need
+3. As a Guest, I want to browse the product catalog to select the desired product
+4. As a Guest, I want to place an order to buy the product
+5. As a Guest, I want to use filters to select the necessary product criteria
+
+6. As a Register user I want to log in to save delivery data, view order history
+7. As a Register user, I want to use the search to find the right products
+8. As a Register user, I want to browse the product catalog to select the desired product
+9. As a Register user, I want to place an order to purchase the product
+10. As a registered user, I want to use filters to select the necessary product criteria
+11. As a Register user, I want to view the order history to view information about the orders made
+12. As a Register user, I want to save the delivery data to order goods conveniently
